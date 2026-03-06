@@ -8,7 +8,7 @@ load_dotenv()
 ACCOUNT_SID = os.getenv('TWILIO_SID')
 AUTH_TOKEN = os.getenv('TWILIO_TOKEN')
 TWILIO_NUMBER = 'whatsapp:+14155238886'
-MI_NUMERO = 'whatsapp:+527774403046'
+MI_NUMERO = 'whatsapp:+5217774403046'  # ← solo cambia esto
 
 app = Flask(__name__)
 
