@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 from twilio.rest import Client
-
 from dotenv import load_dotenv
 import os
 
@@ -8,12 +7,10 @@ load_dotenv()
 
 ACCOUNT_SID = os.getenv('TWILIO_SID')
 AUTH_TOKEN = os.getenv('TWILIO_TOKEN')
-app = Flask(__name__)
-
-ACCOUNT_SID = 'AC4bf79078b0d3b837d9ac307db1ae9a88'
-AUTH_TOKEN = 'ecd289363b3509db9c81991d85c19559'
 TWILIO_NUMBER = 'whatsapp:+14155238886'
 MI_NUMERO = 'whatsapp:+527774403046'
+
+app = Flask(__name__)
 
 def enviar_whatsapp(para, mensaje):
     client = Client(ACCOUNT_SID, AUTH_TOKEN)
